@@ -100,6 +100,16 @@ class TaskTest {
 
     }
 
+    @Test
+    public void findQueryInTaskFalseTest() {
+        Task task = new Task(32);
+
+        boolean expected = false;
+        boolean actual = task.matches("положение");
+
+        Assertions.assertEquals(expected, actual);
+    }
+
 
 
 }

@@ -3,13 +3,13 @@ package Task;
 public class Epic extends Task{
     String[] subtasks;
 
+    public String[] getSubtasks() {
+        return subtasks;
+    }
+
     public Epic(int id, String[] subtasks) {
         super(id);
         this.subtasks = subtasks;
-    }
-
-    public String[] getSubtasks() {
-        return subtasks;
     }
 
     @Override

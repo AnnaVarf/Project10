@@ -1,9 +1,9 @@
 package Task;
 
 public class Meeting extends Task {
-    private String topic;
-    private String project;
-    private String start;
+    protected String topic;
+    protected String project;
+    protected String start;
 
     public Meeting(int id, String topic, String project, String start) {
         super(id);
